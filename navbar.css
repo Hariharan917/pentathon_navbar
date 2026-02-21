@@ -1,0 +1,77 @@
+:root {
+  --neon: #a320ff;
+  --accent: #d180ff;
+  --neon2: #8c00e6;
+  --cyan: #b366ff;
+
+  --bg: linear-gradient(135deg, #1a0033, #0d001a);
+  --bg-dark: #0d001a;
+
+  --text: rgba(224, 224, 224, 0.95);
+  --muted: rgba(224, 224, 224, 0.7);
+
+  --glass: rgba(40, 0, 80, 0.2);
+  --glass2: rgba(30, 0, 60, 0.15);
+  --stroke: rgba(163, 32, 255, 0.3);
+  --shadow: 0 18px 55px rgba(163, 32, 255, 0.25);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin: 20px auto;              
+  padding: 14px 36px;
+  width: 90%;
+
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+}
+
+.navbar-left {
+  display: flex;
+  gap: 28px;                        
+}
+
+.navbar-left a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.navbar-left a:hover {
+  color: var(--text);
+  text-shadow:
+    0 0 7px rgba(163, 32, 255, 0.85),
+    0 0 14px rgba(163, 32, 255, 0.45);
+}
+
+.navbar-right .logo {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  text-shadow:
+    0 0 7px rgba(163, 32, 255, 0.85),
+    0 0 14px rgba(163, 32, 255, 0.45);
+}
+.logo img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
