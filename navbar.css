@@ -1,14 +1,14 @@
 :root {
-  --pink: #ff4fd8;
-  --pink-strong: #ff1fbf;
+  --blue: #2f6bff;
+  --blue-strong: #1a4dff;
 
-  --bg: radial-gradient(circle at 20% 10%, #0a0a0a 0%, #000000 80%);
+  --bg: radial-gradient(circle at 20% 10%, #060a1a 0%, #000000 80%);
 
-  --nav-bg: rgba(0, 0, 0, 0.75);
-  --nav-border: rgba(255, 79, 216, 0.35);
+  --nav-bg: rgba(0, 6, 20, 0.75);
+  --nav-border: rgba(47, 107, 255, 0.35);
 
-  --text: #ffeaff;
-  --muted: rgba(255, 234, 255, 0.6);
+  --text: #eaf0ff;
+  --muted: rgba(234, 240, 255, 0.6);
 }
 
 body {
@@ -32,8 +32,8 @@ body {
   backdrop-filter: blur(14px);
 
   box-shadow:
-    0 10px 35px rgba(0, 0, 0, 0.8),
-    0 0 25px rgba(255, 79, 216, 0.18);
+    0 10px 35px rgba(0, 0, 0, 0.85),
+    0 0 25px rgba(47, 107, 255, 0.18);
 }
 
 .logo {
@@ -43,7 +43,7 @@ body {
 .logo img {
   height: 46px;
   display: block;
-  filter: drop-shadow(0 0 14px rgba(255, 79, 216, 0.8));
+  filter: drop-shadow(0 0 14px rgba(47, 107, 255, 0.75));
 }
 
 .navbar-center {
@@ -65,38 +65,38 @@ body {
   transition: all 0.25s ease;
 }
 
-/* HOVER — still glows */
+/* HOVER — neon glow */
 .navbar-center a:hover {
   color: white;
 
   background: linear-gradient(
     90deg,
-    rgba(255, 79, 216, 0.22),
-    rgba(255, 31, 191, 0.22)
+    rgba(47, 107, 255, 0.22),
+    rgba(26, 77, 255, 0.22)
   );
 
   box-shadow:
-    0 0 12px rgba(255, 79, 216, 0.7),
-    0 0 30px rgba(255, 31, 191, 0.4);
+    0 0 12px rgba(47, 107, 255, 0.7),
+    0 0 30px rgba(26, 77, 255, 0.45);
 
   text-shadow:
-    0 0 10px rgba(255, 79, 216, 1),
-    0 0 22px rgba(255, 31, 191, 0.7);
+    0 0 10px rgba(47, 107, 255, 1),
+    0 0 22px rgba(26, 77, 255, 0.7);
 }
 
-/* ACTIVE — sharp, clean, premium */
+/* ACTIVE — sharp neon button */
 .navbar-center a.active {
   color: white;
 
   background: linear-gradient(
     90deg,
-    rgba(255, 79, 216, 0.32),
-    rgba(255, 31, 191, 0.32)
+    rgba(47, 107, 255, 0.32),
+    rgba(26, 77, 255, 0.32)
   );
 
-  border: 1px solid rgba(255, 79, 216, 0.6);
+  border: 1px solid rgba(47, 107, 255, 0.6);
 
-  box-shadow: inset 0 0 10px rgba(255, 79, 216, 0.35);
+  box-shadow: inset 0 0 10px rgba(47, 107, 255, 0.35);
 
   text-shadow: none;
 }
